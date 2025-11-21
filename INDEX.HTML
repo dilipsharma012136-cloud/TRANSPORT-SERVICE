@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ODC Logistics Contact Page</title>
+</head>
+<body>
+  <h1>ODC Logistics – Contact & Location</h1>
+
+  <p><a id="maps" href="#" target="_blank">📍 Open Location</a></p>
+  <p><a id="website" href="#" target="_blank">🌐 Visit Website</a></p>
+  <p><a id="whatsapp" href="#" target="_blank">💬 WhatsApp Chat</a></p>
+
+  <script>
+    // Replace with your real details
+    const lat = "YOUR_LAT";
+    const lng = "YOUR_LNG";
+    const label = encodeURIComponent("Your Place");
+    const websiteUrl = "https://yourwebsite.com";
+    const waNumber = "918000673431"; // replace
+
+    // Maps link
+    document.getElementById("maps").href =
+      https://www.google.com/maps/search/?api=1&query=${lat},${lng};
+
+    // Website link
+    document.getElementById("website").href = websiteUrl;
+
+    // WhatsApp link
+    document.getElementById("whatsapp").href =
+      https://wa.me/${waNumber}?text=${encodeURIComponent("Hello! I want to enquire about ODC transport.")};
+  </script>
+</body>
+</html>
